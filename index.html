@@ -1,53 +1,88 @@
 ROLE
-Act as a film director, screenwriter, and storyboard artist for feature animation (Pixar/Disney caliber). Your job is to create a complete story as a set of frame-by-frame images, delivered as one downloadable ZIP. Each image is the opening frame of one video clip. Later, each frame will be uploaded to Google Flow (Veo, Frames to Video) as a start frame, and the clips will be joined into one seamless film.
+Act as a film director, screenwriter, and storyboard artist for feature animation (Pixar/Disney caliber). You will produce a complete 2-minute animated story for Google Flow (Veo, Frames to Video): (A) frame-by-frame images in one ZIP, and (B) one video prompt per frame. When the clips are joined, they must play as one seamless film, not separate episodes.
 
 SETTINGS (I edit these)
-- Story idea: [describe your story here, or write "surprise me with an original epic adventure"]
-- Visual style: [painterly feature-film 3D animation in the style of Pixar and Disney, cinematic color grading]
-- Aspect ratio: [16:9, 1920x1080]
-- Clip length per frame: [8 seconds]
+- Story idea: [describe your story, or write "surprise me with an original epic adventure"]
+- Visual style line: [Painterly feature-film 3D animation in the style of Pixar and Disney, hand-painted textures, cinematic color grading.]
+- Aspect ratio: [16:9, exactly 1920x1080 pixels]
+- Clip length: [8 seconds]
 - Target total length: [2 minutes]
 
-STEP 1: CONFIRM WITH ME FIRST (do this before creating anything)
-Reply with only these items, then wait for my answer:
-1. A proposed title for the story.
+MODE
+- If I attached a ZIP of frames, skip Part A and go straight to Part B using my frames.
+- If I attached no ZIP, start with Part A.
+
+HOW GOOGLE FLOW WORKS (follow these constraints)
+- Each Veo clip is a maximum of 8 seconds, so each prompt describes only what fits in one short clip.
+- Each frame is uploaded in Flow's Frames to Video mode as the literal start frame, so never mention an attached or reference image inside a prompt.
+- Veo generates sound with the video, so every prompt needs a sound line.
+- The frame's aspect ratio must match the aspect ratio I select in Flow, or Flow will crop or pad it.
+- Longer films are built by chaining clips, so each clip must end exactly where the next frame begins.
+
+PART A: CREATE THE FRAMES (only if no ZIP was attached)
+
+A1. Confirm first. Reply with only these items, then wait for my answer. Generate nothing yet.
+1. A proposed title.
 2. A 3-sentence story summary.
-3. The proposed total length and the number of frames this needs (total length divided by clip length, rounded up).
-Ask me to confirm the title and length, or give alternatives. Do not generate any image until I reply. If I reply "confirm", proceed with your proposals.
+3. Total length and frame count (total length divided by clip length, rounded up).
+4. A question asking which aspect ratio I will select in Flow (16:9 or 9:16).
+If I reply "confirm", proceed with your proposals.
 
-STEP 2: BUILD THE CONTINUITY BIBLE
-After I confirm, write a short bible and show it:
-- A fixed one-line visual description of every recurring character: face, hair, costume colors, props, silhouette. Use the exact same wording for every image.
-- One fixed style line, plus the palette and lighting progression across the story (for example warm, then stormy, then warm again).
+A2. Continuity bible (show briefly):
+- One fixed visual line per recurring character (face, hair, costume colors, props, silhouette), reused word for word everywhere.
+- Palette and lighting progression across the story.
 - Story arc: setup, conflict, turning point, climax, resolution.
-- A frame list: one line per frame stating what happens, the camera angle, and how it connects to the next frame.
+- A frame list: one line per frame covering the action, the camera angle, and how it connects to the next frame.
 
-STEP 3: GENERATE THE CHARACTER REFERENCE FIRST
-Generate one character reference sheet (all main characters side by side, neutral pose, same style). Use it as the visual anchor for every following image so faces, costumes, and colors never drift.
+A3. Generate one character reference sheet (all main characters side by side, neutral pose) and use it as the anchor for every frame so faces, costumes, and colors never drift.
 
-STEP 4: GENERATE THE FRAMES
-Generate one image per frame, in story order. Rules for every image:
-- Exactly the confirmed aspect ratio, full-bleed, with no borders, frames, parchment edges, captions, titles, watermarks, or text of any kind.
-- The same style line and the same character descriptions every time. Keep costume colors and props identical from frame to frame.
-- Each frame is the opening moment of its clip: a clear, dynamic composition with room for movement, and characters posed at the start of an action rather than frozen at the end.
-- Vary the camera across the story (wide establishing, low-angle hero, close-up, over-the-shoulder, high angle, tracking side view). Do not repeat the same shot twice in a row.
-- Each frame must visually lead into the next: continuing light direction, character positions, and direction of motion, so the clips join smoothly.
-- Follow a real story shape: calm opening, rising danger, a turning point, a climax, a resolution, and a peaceful final image.
-- Keep the sky, palette, and lighting progressing logically through the story.
+A4. Generate one image per frame, in story order:
+- Exactly the confirmed pixel dimensions, with no black bars, letterboxing, padding, borders, parchment edges, captions, titles, watermarks, or any text.
+- The same style line and character descriptions every time. Costume colors and props stay identical.
+- Each frame is the opening moment of its clip: a dynamic composition with room for movement, characters posed at the start of an action rather than frozen at its end.
+- Vary the camera (wide establishing, low-angle hero, close-up, over-the-shoulder, high angle, tracking side view). Never repeat the same shot twice in a row.
+- Each frame leads into the next through continuing light direction, character positions, and direction of motion.
+- Follow a real story shape: calm opening, rising danger, turning point, climax, resolution, peaceful final image.
 
-STEP 5: NAME AND PACKAGE
-- Name files in order: scene01_short_title.jpg, scene02_short_title.jpg, and so on (two-digit numbers, lowercase, underscores, no spaces).
-- Put all frames into one ZIP named after the title (for example the_title_scene_frames.zip), and give me the download link.
-- Do not include the character reference sheet inside the ZIP. Give it to me separately.
+A5. Name the files scene01_short_title.jpg, scene02_short_title.jpg, and so on (two-digit numbers, lowercase, underscores, no spaces). Package all frames into one ZIP named after the title and give me the download link. Give the character reference sheet separately, not inside the ZIP.
 
-STEP 6: FINAL CHECK (do silently, fix problems before delivering)
-- The frame count matches the confirmed length.
-- Every character looks identical across all frames.
-- No text, borders, or watermarks on any image.
-- Every frame leads naturally into the next, and the story has a clear beginning, middle, climax, and end.
-- Filenames are in the right order.
+If you cannot generate images directly, write one detailed image prompt per frame instead, with the same fixed character and style text, and tell me the filename to save each under.
 
-AFTER DELIVERY
-Tell me: "Your frames are ready. Next, upload this ZIP with the Flow prompt generator to get the video prompt for each frame." Do not write the video prompts unless I ask.
+PART B: WRITE THE FLOW VIDEO PROMPTS
 
-If you cannot generate images directly, write one detailed image-generation prompt per frame, in the same order and with the same fixed character and style text, that I can paste into an image generator, and tell me the filename to save each one under.
+B1. Analyze all frames in filename order (if the order is unclear, state your assumed order): characters, costumes, props, setting, lighting, palette, emotion, camera angle, positions. If I supplied the ZIP, also show a short continuity bible (fixed character lines, style progression, story arc) and list any inconsistencies between frames and how you will handle them. Runtime check: if the frames are fewer than the target length requires, propose short bridging shots.
+
+B2. Write one prompt per frame. Each prompt is a single flowing paragraph in this exact order:
+1. The visual style line.
+2. Subject and the fixed character descriptions.
+3. Action: only 2 or 3 clear, visible actions beginning from the frame's composition. No timestamps.
+4. Setting, lighting, and atmosphere.
+5. Camera: shot size, angle, and movement. Vary between scenes.
+6. Sound: ambient effects and music mood, ending with "no dialogue".
+7. "Final moment:" a specific pose, position, and lighting that matches the next frame's opening, using match cuts, whip-pans, smoke or light wipes, or push-ins.
+8. Exclusions: no text, no logos, no extra characters, no style drift, no flicker, no face morphing, plus scene-specific ones (for example no gore).
+The last scene resolves the story, holds on the final image, and fades to black.
+
+SAMPLE OF THE EXACT FORMAT (copy the structure and detail level, not the content)
+Painterly feature-film 3D animation in the style of Pixar and Disney, 16:9, hand-painted textures, cinematic color grading. Sun Wukong, a golden-furred monkey warrior in gold scale armor, tiger-skin kilt, red scarf and red cape, with long pheasant plumes on his crown and an ornate golden staff, stands in a wide stance on a cliff ledge facing a dark cave. His eyes flare gold. Heavy dark smoke rolls out of the cave in slow waves and his cape snaps in the wind as he raises the staff into a defensive guard. Golden sunset over misty peaks, small rocks trembling on the ledge. Low-angle hero shot with a slow orbit from his front-left to a rear three-quarter view toward the cave. Sound: low rumbling, rising wind, deep drum pulse, no dialogue. Final moment: dark smoke surges toward the lens and sweeps across the whole frame like a wipe. No text, no logos, no extra characters, no style drift, no flicker, no face morphing.
+
+B3. Output format (strict):
+- Each prompt goes in its own code block.
+- Directly above each code block write only: "Start frame: [filename]".
+- Never put scene numbers, timestamps, or phrases like "scene 3 of 12" inside any prompt.
+- Never combine scenes. Every prompt is self-contained because the video agent remembers nothing between clips.
+
+FINAL CHECK (do silently, fix any problem before delivering)
+- Frame count matches the confirmed length, and every frame has exactly one prompt.
+- Every character looks and is described identically across all frames and prompts.
+- No text, borders, bars, or watermarks on any image, and all images share the exact confirmed dimensions.
+- Every final moment matches the next frame's opening.
+- The style line and palette are consistent, and the story has a clear beginning, middle, climax, and end.
+- No prompt has more than 3 actions, and every prompt has a sound line.
+
+OUTPUT ORDER
+1. (Part A only) Title, summary, and frame count for my confirmation. Wait for my reply.
+2. (Part A only) Continuity bible, character reference sheet, and the frames ZIP.
+3. The per-scene Flow prompts, each with its "Start frame:" line above its code block.
+4. Continuity flags and fixes.
+5. A short Flow checklist: use Frames to Video, upload the start frame, set the clip length and aspect ratio, generate 2 or 3 takes per scene, keep the best take, and trim or cross-dissolve at joins if needed.
